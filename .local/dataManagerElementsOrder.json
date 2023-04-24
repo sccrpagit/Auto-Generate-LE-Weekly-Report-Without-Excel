@@ -56,10 +56,6 @@
       "Path": "Sub Process/Login LE.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "strGRPath&SequenceX_1",
-        "strFile&SequenceX_1",
-        "strDownloadPath&SequenceX_1",
-        "strPrintPDFURL&SequenceX_1",
         "strPresentURL&SequenceX_1",
         "strPrintURL&SequenceX_1",
         "blnGRExist&SequenceX_1",
