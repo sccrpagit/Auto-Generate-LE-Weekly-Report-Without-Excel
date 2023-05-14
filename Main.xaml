@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1514,10418" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:uascw="clr-namespace:UiPath.Activities.System.Compression.Workflow;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1514,7394" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:uascw="clr-namespace:UiPath.Activities.System.Compression.Workflow;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="96">
       <x:String>System.Activities</x:String>
@@ -152,7 +152,7 @@
       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <ueab:SequenceX DisplayName="Login LE" sap:VirtualizedContainerService.HintSize="1060,10273" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+  <ueab:SequenceX DisplayName="Login LE" sap:VirtualizedContainerService.HintSize="1060,7329" sap2010:WorkflowViewState.IdRef="SequenceX_1">
     <ueab:SequenceX.Variables>
       <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=True,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
       <Variable x:TypeArguments="ui:CurrentJobInfo" Name="JobData" />
@@ -196,42 +196,89 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1018,10185" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1018,7241" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Group" sap:VirtualizedContainerService.HintSize="980,8248" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Group" sap:VirtualizedContainerService.HintSize="980,5304" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="Initialization" sap:VirtualizedContainerService.HintSize="938,3665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence DisplayName="Initialization" sap:VirtualizedContainerService.HintSize="938,629" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="485,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[string.Format(&quot;START - Auto Generate LE Weekly Report&quot;)]" />
-            <Sequence DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="485,417" sap2010:WorkflowViewState.IdRef="Sequence_18">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[string.Format(&quot;START - Auto Generate LE Weekly Report&quot;)]" />
+            <Sequence DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_18">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="388,133" sap2010:WorkflowViewState.IdRef="KillProcess_5" ProcessName="Chrome" />
               <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="388,133" sap2010:WorkflowViewState.IdRef="KillProcess_6" ProcessName="EXCEL" />
             </Sequence>
-            <Sequence DisplayName="Folder Creation" sap:VirtualizedContainerService.HintSize="485,2398" sap2010:WorkflowViewState.IdRef="Sequence_13">
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" ContinueOnError="True" DisplayName="Use Application: C:\Windows\system32\cmd.exe" sap:VirtualizedContainerService.HintSize="450,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Never" ScopeGuid="276b6f38-b70b-4e5c-a579-d822e9e17334" Version="V2" WindowResize="Minimize">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="300,144" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="258,52" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,287" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'windowsterminal.exe C:\…'" sap:VirtualizedContainerService.HintSize="334,199" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" ScopeIdentifier="276b6f38-b70b-4e5c-a579-d822e9e17334" Shortcuts="[d(hk)][d(lwin)]d[u(lwin)][u(hk)]" Version="V3">
+                            <uix:NKeyboardShortcuts.Target>
+                              <uix:TargetAnchorable CvType="InputBox" DesignTimeRectangle="23, 5, 1093, 618" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'windowsterminal.exe C:\…'" Guid="9a6e9c1c-cf52-4e05-a57f-cf95e2b90cb5" InformativeScreenshot="03ea90a63ba79eff4a2c280655c931a1.png" ScopeSelectorArgument="&lt;wnd app='windowsterminal.exe' appid='Microsoft.WindowsTerminal_8wekyb3d8bbwe!App' title='C:\Windows\system32\cmd.exe' /&gt;" SearchSteps="CV" SelectionStrategy="AA" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                            </uix:NKeyboardShortcuts.Target>
+                          </uix:NKeyboardShortcuts>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:CommentOut>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="200, 208, 1129, 635" FilePath="Microsoft.WindowsTerminal_8wekyb3d8bbwe!App" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKnSURBVFhH7ddLTmpBEAbgXhQPEUFUEOWRGEwMw2M0ThiwEyZMNAIDBBEIC4AdkJgob0UEgrKOulR566Q8ORy8wdmlkz9hxFfV1d0EtVmb9fj4qC0CP8nNzc2Pc3V19ZNoWIApZhYzaFlMMNNsClDRaBQwkUiEEg6H9YRCIcrx8bGeo6MjSjAY1HN4eEgJBAJ6/H6/noODA8r+/j5lb29Pj2JY4gxLnGGJMyxxK1jiPp+PQgX8BixxK1jiu7u7oIz46ekpNJtNeH9/pxlJWOJWsMSXwRxl7Bjx+XwOn5+f8Pr6CpeXlyvhVV0zLHGv10uhAuR2v729wcfHB8xmM5hOp9Dv9+Hi4uIbvg4scY/HA0riGOz45eUFJpMJjMdjGkWn04Hz8/NvOMMSZ1jiy2COYljOGTvudrswGo1oR4bDITw9PYGmaWvBEt/Z2aEoCfOcMdhxq9WiczAYDGgUuBPJZFKHJc6wxK1gjNvt/ipAwnLO2PHz8zP0ej3aESwAd2IVLPFlMEcZYTnneDwOjUaD4Ha7TTuCT7IRt4IlLuHt7W2KMoMZL5fLUKvVoF6v004gnkgkTLtmeFXXDGNcLtdXARLGw4V4qVSCarVKReDnXC4HsVjs12COkjDm7OwM7u/voVKpEFwsFiGbzeo4wxJnWOIMS1zCW1tbFMUwBg9XoVCAh4cHKuLu7g5ub28JN4OxQH41+eHCtwOvL15dfE8ymcw3nGGn00mhAuSVSqfTVEQ+n6ffdYkzzF0bYXy08N3gq4u3Bw+whCXucDhASRyDNyKVSsH19TWcnJyYwrzVWCi+mGYwXlu8Ofg9RphxKoBhjPGASZxhxv9lzmaw3W6nUAFWsLHrZbDZnCXOsMRtNhuoBaxJ3AqW+Dow44tof/8dbNZ/u5T6A8jJXVVBUYbIAAAAAElFTkSuQmCC" InformativeScreenshot="5c1147eec9c872ca3298b8d4a10d3149.png" IsExactTitleEnabled="True" Selector="&lt;wnd app='windowsterminal.exe' appid='Microsoft.WindowsTerminal_8wekyb3d8bbwe!App' title='C:\Windows\system32\cmd.exe' /&gt;" Title="C:\Windows\system32\cmd.exe" />
+              </uix:NApplicationCard.TargetApp>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NApplicationCard>
+            <Sequence DisplayName="Folder Creation" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_13">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:GetEnvironmentFolder DisplayName="Get Environment Folder" FolderPath="[strMyDoc]" sap:VirtualizedContainerService.HintSize="423,62" sap2010:WorkflowViewState.IdRef="GetEnvironmentFolder_1" SpecialFolder="MyDocuments" />
@@ -374,7 +421,7 @@
                 </If.Else>
               </If>
             </Sequence>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="485,527" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,52" sap2010:WorkflowViewState.IdRef="CommentOut_3">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,448" sap2010:WorkflowViewState.IdRef="Sequence_25">
                   <sap:WorkflowViewStateService.ViewState>
@@ -418,13 +465,13 @@
               </ui:CommentOut.Body>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
           </Sequence>
-          <ui:BuildDataTable DataTable="[dtBranchInfo]" DisplayName="Branch Machines Info" sap:VirtualizedContainerService.HintSize="938,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_5" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Branch&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;10&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Email_x0020_Address&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Machine&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;CCList&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;300&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Receiver&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Branch&gt;SB&lt;/Branch&gt;&#xD;&#xA;    &lt;Email_x0020_Address&gt;serembanwalls@sccsb.com.my&lt;/Email_x0020_Address&gt;&#xD;&#xA;    &lt;Machine&gt;CPU116&lt;/Machine&gt;&#xD;&#xA;    &lt;CCList&gt;eric.tan@sccsb.com.my; yen@sccsb.com.my; kokyu.kan@sccsb.com.my; it03@sccsb.com.my&lt;/CCList&gt;&#xD;&#xA;    &lt;Receiver&gt;pekwei.yeong@sccsb.com.my&lt;/Receiver&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Branch&gt;MK&lt;/Branch&gt;&#xD;&#xA;    &lt;Email_x0020_Address&gt;mtkwalls@sccsb.com.my&lt;/Email_x0020_Address&gt;&#xD;&#xA;    &lt;Machine&gt;MTK-WALLS&lt;/Machine&gt;&#xD;&#xA;    &lt;CCList&gt;eric.tan@sccsb.com.my; yen@sccsb.com.my; kokyu.kan@sccsb.com.my; it03@sccsb.com.my&lt;/CCList&gt;&#xD;&#xA;    &lt;Receiver&gt;pekwei.yeong@sccsb.com.my&lt;/Receiver&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Branch&gt;KB&lt;/Branch&gt;&#xD;&#xA;    &lt;Email_x0020_Address&gt;kbwalls@sccsb.com.my&lt;/Email_x0020_Address&gt;&#xD;&#xA;    &lt;Machine&gt;KB-WALLS&lt;/Machine&gt;&#xD;&#xA;    &lt;CCList&gt;eric.tan@sccsb.com.my; yen@sccsb.com.my; kokyu.kan@sccsb.com.my; it03@sccsb.com.my&lt;/CCList&gt;&#xD;&#xA;    &lt;Receiver&gt;pekwei.yeong@sccsb.com.my&lt;/Receiver&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Branch&gt;KT&lt;/Branch&gt;&#xD;&#xA;    &lt;Email_x0020_Address&gt;ktwalls@sccsb.com.my&lt;/Email_x0020_Address&gt;&#xD;&#xA;    &lt;Machine&gt;KT-WALLS&lt;/Machine&gt;&#xD;&#xA;    &lt;CCList&gt;eric.tan@sccsb.com.my; yen@sccsb.com.my; kokyu.kan@sccsb.com.my; it03@sccsb.com.my&lt;/CCList&gt;&#xD;&#xA;    &lt;Receiver&gt;pekwei.yeong@sccsb.com.my&lt;/Receiver&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Branch&gt;KU&lt;/Branch&gt;&#xD;&#xA;    &lt;Email_x0020_Address&gt;purchasing.assistant@sccsb.com.my&lt;/Email_x0020_Address&gt;&#xD;&#xA;    &lt;Machine&gt;DESKTOP-0NJUG2P&lt;/Machine&gt;&#xD;&#xA;    &lt;CCList&gt;eric.tan@sccsb.com.my; yen@sccsb.com.my; kokyu.kan@sccsb.com.my; it03@sccsb.com.my&lt;/CCList&gt;&#xD;&#xA;    &lt;Receiver&gt;pekwei.yeong@sccsb.com.my&lt;/Receiver&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
+          <ui:BuildDataTable DataTable="[dtBranchInfo]" DisplayName="Branch Machines Info" sap:VirtualizedContainerService.HintSize="938,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_5" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Branch&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;10&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Email_x0020_Address&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Machine&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;CCList&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;300&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Receiver&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;Branch&gt;SB&lt;/Branch&gt;&#xA;    &lt;Email_x0020_Address&gt;serembanwalls@sccsb.com.my&lt;/Email_x0020_Address&gt;&#xA;    &lt;Machine&gt;CPU116&lt;/Machine&gt;&#xA;    &lt;CCList&gt;eric.tan@sccsb.com.my; yen@sccsb.com.my; kokyu.kan@sccsb.com.my; it03@sccsb.com.my&lt;/CCList&gt;&#xA;    &lt;Receiver&gt;pekwei.yeong@sccsb.com.my&lt;/Receiver&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;Branch&gt;MK&lt;/Branch&gt;&#xA;    &lt;Email_x0020_Address&gt;mtkwalls@sccsb.com.my&lt;/Email_x0020_Address&gt;&#xA;    &lt;Machine&gt;MTK-WALLS&lt;/Machine&gt;&#xA;    &lt;CCList&gt;eric.tan@sccsb.com.my; yen@sccsb.com.my; kokyu.kan@sccsb.com.my; it03@sccsb.com.my&lt;/CCList&gt;&#xA;    &lt;Receiver&gt;pekwei.yeong@sccsb.com.my&lt;/Receiver&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;Branch&gt;KB&lt;/Branch&gt;&#xA;    &lt;Email_x0020_Address&gt;kbwalls@sccsb.com.my&lt;/Email_x0020_Address&gt;&#xA;    &lt;Machine&gt;KB-WALLS&lt;/Machine&gt;&#xA;    &lt;CCList&gt;eric.tan@sccsb.com.my; yen@sccsb.com.my; kokyu.kan@sccsb.com.my; it03@sccsb.com.my&lt;/CCList&gt;&#xA;    &lt;Receiver&gt;pekwei.yeong@sccsb.com.my&lt;/Receiver&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;Branch&gt;KT&lt;/Branch&gt;&#xA;    &lt;Email_x0020_Address&gt;ktwalls@sccsb.com.my&lt;/Email_x0020_Address&gt;&#xA;    &lt;Machine&gt;KT-WALLS&lt;/Machine&gt;&#xA;    &lt;CCList&gt;eric.tan@sccsb.com.my; yen@sccsb.com.my; kokyu.kan@sccsb.com.my; it03@sccsb.com.my&lt;/CCList&gt;&#xA;    &lt;Receiver&gt;pekwei.yeong@sccsb.com.my&lt;/Receiver&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;Branch&gt;KU&lt;/Branch&gt;&#xA;    &lt;Email_x0020_Address&gt;purchasing.assistant@sccsb.com.my&lt;/Email_x0020_Address&gt;&#xA;    &lt;Machine&gt;DESKTOP-0NJUG2P&lt;/Machine&gt;&#xA;    &lt;CCList&gt;eric.tan@sccsb.com.my; yen@sccsb.com.my; kokyu.kan@sccsb.com.my; it03@sccsb.com.my&lt;/CCList&gt;&#xA;    &lt;Receiver&gt;pekwei.yeong@sccsb.com.my&lt;/Receiver&gt;&#xA;  &lt;/TableName&gt;&#xA;&lt;/NewDataSet&gt;">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -432,13 +479,60 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:BuildDataTable>
-          <Sequence DisplayName="Generate LE Weekly Report by Branch" sap:VirtualizedContainerService.HintSize="938,4355" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <Sequence DisplayName="Generate LE Weekly Report by Branch" sap:VirtualizedContainerService.HintSize="938,4447" sap2010:WorkflowViewState.IdRef="Sequence_6">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="876,52" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="417,140" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: C:\Windows\system32\cmd.exe" sap:VirtualizedContainerService.HintSize="375,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="276b6f38-b70b-4e5c-a579-d822e9e17334" Version="V2" WindowResize="Minimize">
+                    <uix:NApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="x:Object">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,291" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'windowsterminal.exe C:\…'" sap:VirtualizedContainerService.HintSize="334,199" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="276b6f38-b70b-4e5c-a579-d822e9e17334" Shortcuts="[d(hk)][d(lwin)]d[u(lwin)][u(hk)]" Version="V3">
+                            <uix:NKeyboardShortcuts.Target>
+                              <uix:TargetAnchorable CvType="InputBox" DesignTimeRectangle="23, 5, 1093, 618" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'windowsterminal.exe C:\…'" Guid="9a6e9c1c-cf52-4e05-a57f-cf95e2b90cb5" InformativeScreenshot="03ea90a63ba79eff4a2c280655c931a1.png" ScopeSelectorArgument="&lt;wnd app='windowsterminal.exe' appid='Microsoft.WindowsTerminal_8wekyb3d8bbwe!App' title='C:\Windows\system32\cmd.exe' /&gt;" SearchSteps="CV" SelectionStrategy="AA" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                            </uix:NKeyboardShortcuts.Target>
+                          </uix:NKeyboardShortcuts>
+                        </Sequence>
+                      </ActivityAction>
+                    </uix:NApplicationCard.Body>
+                    <uix:NApplicationCard.TargetApp>
+                      <uix:TargetApp Area="200, 208, 1129, 635" FilePath="Microsoft.WindowsTerminal_8wekyb3d8bbwe!App" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKnSURBVFhH7ddLTmpBEAbgXhQPEUFUEOWRGEwMw2M0ThiwEyZMNAIDBBEIC4AdkJgob0UEgrKOulR566Q8ORy8wdmlkz9hxFfV1d0EtVmb9fj4qC0CP8nNzc2Pc3V19ZNoWIApZhYzaFlMMNNsClDRaBQwkUiEEg6H9YRCIcrx8bGeo6MjSjAY1HN4eEgJBAJ6/H6/noODA8r+/j5lb29Pj2JY4gxLnGGJMyxxK1jiPp+PQgX8BixxK1jiu7u7oIz46ekpNJtNeH9/pxlJWOJWsMSXwRxl7Bjx+XwOn5+f8Pr6CpeXlyvhVV0zLHGv10uhAuR2v729wcfHB8xmM5hOp9Dv9+Hi4uIbvg4scY/HA0riGOz45eUFJpMJjMdjGkWn04Hz8/NvOMMSZ1jiy2COYljOGTvudrswGo1oR4bDITw9PYGmaWvBEt/Z2aEoCfOcMdhxq9WiczAYDGgUuBPJZFKHJc6wxK1gjNvt/ipAwnLO2PHz8zP0ej3aESwAd2IVLPFlMEcZYTnneDwOjUaD4Ha7TTuCT7IRt4IlLuHt7W2KMoMZL5fLUKvVoF6v004gnkgkTLtmeFXXDGNcLtdXARLGw4V4qVSCarVKReDnXC4HsVjs12COkjDm7OwM7u/voVKpEFwsFiGbzeo4wxJnWOIMS1zCW1tbFMUwBg9XoVCAh4cHKuLu7g5ub28JN4OxQH41+eHCtwOvL15dfE8ymcw3nGGn00mhAuSVSqfTVEQ+n6ffdYkzzF0bYXy08N3gq4u3Bw+whCXucDhASRyDNyKVSsH19TWcnJyYwrzVWCi+mGYwXlu8Ofg9RphxKoBhjPGASZxhxv9lzmaw3W6nUAFWsLHrZbDZnCXOsMRtNhuoBaxJ3AqW+Dow44tof/8dbNZ/u5T6A8jJXVVBUYbIAAAAAElFTkSuQmCC" InformativeScreenshot="5c1147eec9c872ca3298b8d4a10d3149.png" Selector="&lt;wnd app='windowsterminal.exe' appid='Microsoft.WindowsTerminal_8wekyb3d8bbwe!App' title='C:\Windows\system32\cmd.exe' /&gt;" Title="C:\Windows\system32\cmd.exe" />
+                    </uix:NApplicationCard.TargetApp>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NApplicationCard>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
             <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" ColumnSelectionType="ByName" DataTable="[dtBranchInfo]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="876,4244" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
@@ -875,7 +969,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="984,159" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="558,159" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
