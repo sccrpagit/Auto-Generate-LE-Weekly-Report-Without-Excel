@@ -1,0 +1,116 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strPresentationURL&SequenceX_1",
+        "blnFail&SequenceX_1",
+        "strFullRepURL&SequenceX_1",
+        "strRepURL&SequenceX_1",
+        "strLastBizDay&SequenceX_1",
+        "strFirstBizDay&SequenceX_1",
+        "strLastBizDayThu&SequenceX_1",
+        "strFirstBizDaySat&SequenceX_1",
+        "strLastBizDayFri&SequenceX_1",
+        "strFirstBizDayMon&SequenceX_1",
+        "strBranchGrp02&SequenceX_1",
+        "strBranchGrp01&SequenceX_1",
+        "strURLTag&SequenceX_1",
+        "strIDTag&SequenceX_1",
+        "strUserNameTag&SequenceX_1",
+        "strTodayFolder&SequenceX_1",
+        "strTodayFullFolder&SequenceX_1",
+        "strZipFile&SequenceX_1",
+        "strEmailReceiver&SequenceX_1",
+        "strCCList&SequenceX_1",
+        "blnExists&SequenceX_1",
+        "strFullRepPath&SequenceX_1",
+        "strFullProcPath&SequenceX_1",
+        "strRepFolder&SequenceX_1",
+        "strProcessFolder&SequenceX_1",
+        "JobData&SequenceX_1",
+        "strMyDoc&SequenceX_1",
+        "dtBranchInfo&SequenceX_1",
+        "strBranch&SequenceX_1",
+        "strCredentialName&SequenceX_1",
+        "strLEUserNameCol&SequenceX_1",
+        "strUserName&SequenceX_1",
+        "strPWD&SequenceX_1",
+        "strID&SequenceX_1",
+        "strURL&SequenceX_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sub Process/Login LE.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strGRPath&SequenceX_1",
+        "strFile&SequenceX_1",
+        "strDownloadPath&SequenceX_1",
+        "strPrintPDFURL&SequenceX_1",
+        "strPresentURL&SequenceX_1",
+        "strPrintURL&SequenceX_1",
+        "blnGRExist&SequenceX_1",
+        "strRepSubURL&SequenceX_1",
+        "strAccessSubURL&SequenceX_1",
+        "strURLHead&SequenceX_1",
+        "strURLTail&SequenceX_1",
+        "strURLFull&SequenceX_1",
+        "strGRNCode&SequenceX_1",
+        "strNewFile&SequenceX_1",
+        "strRenamedFile&SequenceX_1",
+        "blnExists&SequenceX_1",
+        "blnInvalidPWD&SequenceX_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_PresentationURL",
+        "out_blnFail",
+        "In_strReportURL",
+        "In_strTodayFolder",
+        "In_strBranch",
+        "In_strURL",
+        "In_strID",
+        "In_strUserName",
+        "In_strPassword",
+        "In_strStartDate",
+        "In_strEndDate"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sub Process/Extract Report.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "blnExists&SequenceX_1",
+        "strGRNNo&SequenceX_1",
+        "strURLHeader&SequenceX_1",
+        "strURLTail&SequenceX_1",
+        "strURLFull&SequenceX_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_strURL",
+        "In_strID",
+        "In_strUserName",
+        "In_strPassword",
+        "In_strStartDate",
+        "In_strEndDate",
+        "In_strBranch"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    }
+  ]
+}
